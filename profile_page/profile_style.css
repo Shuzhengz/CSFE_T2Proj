@@ -1,0 +1,38 @@
+body {
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 5% 1fr 4fr;
+    grid-template-areas: 
+        "nav header"
+        "nav profile"
+        "nav posts";
+    background-color: red;
+}
+
+.sidebar {
+    background-color: blue;
+    grid-area: nav;
+}
+
+.header {
+    background-color: green;
+    grid-area: header;
+}
+
+.posts {
+    background-color: pink;
+    grid-area: posts;
+}
+
+.profile {
+    background-color: orange;
+    grid-area: profile;
+}
+
