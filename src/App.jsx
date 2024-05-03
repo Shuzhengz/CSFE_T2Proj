@@ -1,19 +1,31 @@
 import { useState } from 'react'
 import { Majors } from './majors-categories'
+import {CategorySearch} from './category-search-page'
 import './styles.css'
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div className='temp-navigation'>h</div>
-      <Majors/>
-    </>
-  )
+  
+    <Router>
+      <div>
+        <div className='temp-navigation'>h</div>
+
+        {/* put the navigation bar outside of routes */}
+        <Routes>
+          <Route exact path='/'>
+            
+            {/* put the home screen here */}
+            </Route>
+          <Route exact path='/majors' element={<Majors/>}></Route>
+          <Route path='/majors/computerscience' element={<CategorySearch/>}></Route>
+
+        </Routes>
+      </div>
+    </Router>
+  );
 }
 
 export default App
- 

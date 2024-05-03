@@ -70,4 +70,4 @@ export function CategorySearch() {
   );
 }
 
-export default App;
+

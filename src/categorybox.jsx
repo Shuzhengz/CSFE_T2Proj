@@ -1,15 +1,15 @@
 
 export function CategoryBox ({title}){
     return (
-        <div className='category' onClick={() => alert('Redirect to item')}>
+        <Link className='category' to='/majors/computerscience'>
             <header>{title}</header> 
             <p>
                 pasdoifjapsdoifjapsdoifjapsdoifjapsodfijapsdofijapsdoifjaspdfoijasdpfoijasdpfoijasdfpoiasjdpfoijasdopfjaspdofijaposdifj 
-                 {title}
+                {title}
 
             </p>
         
             
-        </div>
+        </Link>
     )
 }

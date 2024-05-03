@@ -1,5 +1,7 @@
+
 import {CategoryBox} from './categorybox.jsx'
 export function Majors() {
+    
     return (
         <>
         
