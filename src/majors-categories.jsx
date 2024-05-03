@@ -8,6 +8,7 @@ export function Majors() {
         <div className='category-container'>
             <CategoryBox
             title='computer science'
+            id='0'
             />
             <CategoryBox
             title='biology'
