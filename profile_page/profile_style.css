@@ -1,0 +1,107 @@
+body {
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 5% 1fr 4fr;
+    grid-template-areas: 
+        "nav header"
+        "nav profile"
+        "nav posts";
+}
+
+.sidebar {
+    grid-area: nav;
+    text-align: center;
+    background-color: gray;
+}
+
+.header {
+    grid-area: header;
+}
+
+.posts {
+    grid-area: posts;
+    overflow-y: scroll;
+    padding: 10px;
+    position: relative;
+}
+
+.posts .post1 {
+    background-color: lightgray;
+    padding: 0px 10px 0px;
+}
+
+.like {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profile {
+    background-color: lightgrey;
+    grid-area: profile;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: 
+        "profile-pic links"
+        "profile-pic buttons";
+}
+
+a {
+    display: block;
+    padding: 8px;
+
+} 
+li {
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.profile_pic {
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+    border: 3px solid black;
+  }
+
+.picture_area {
+    grid-area: profile-pic;
+    place-self: right center;
+    text-align: left;
+}
+
+
+.links {
+    grid-area: links;
+    place-self: center center;
+}
+
+.buttons {
+    grid-area: buttons;
+    place-self: center center;
+}
+
+.post {
+    border-radius: 100px;
+    margin: auto;
+    margin-top: 60px;
+    padding: 15px 32px;
+    &:hover {
+        box-shadow:0 10px 30px 10px rgba(0,0,0,0.3);
+    }
+}
