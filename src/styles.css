@@ -1,0 +1,23 @@
+.category {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 20%;
+    min-width: 20%;
+    aspect-ratio: 1/1;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(126, 218, 255);
+    text-align: center;
+    overflow-wrap:break-word;
+}
+.category-container {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+.temp-navigation {
+    height: 10%;
+    min-height: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+    background-color:aquamarine;
+}
