@@ -34,8 +34,8 @@ jobs:
     #- name: Run the tests
     #  run: npm test
 
-    - name: run dev
-      run: npm run dev
+    #- name: run dev
+    #  run: npm run dev
 
-    - name: run client
-      run: npm run dev-client
+    #- name: run client
+    #  run: npm run dev-client
