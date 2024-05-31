@@ -1,0 +1,24 @@
+.geiselimage {
+    height:100vh;
+    background: url('homepage_images/geisel.png');
+    background-size:cover;
+    position:relative;
+}
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.navbarScroll.navbarDark {
+    background-color: black;
+}
